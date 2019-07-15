@@ -8,16 +8,28 @@
 </head>
 <body>
     <script>
-        function foo(a){
-            this.a = a;
-        }
-        var bar = new foo(2);
-        console.log(bar)
+        // function foo(a){
+        //     this.a = a;
+        // }
+        // var bar = new foo(2);
+        // console.log(bar)
         // 使用new来调用函数时，我们会构造一个新对象并把它绑定到foo调用中的this上
         // 1. 创建一个全新的对象。
         // 2. 这个对象会被执行[[原型]]连接。
         // 3. 这个新对象会绑定到函数调用的this。
         // 4. 如果函数没有返回其他对象，那么new 表达式中的函数调用会自动返回这个新对象/
+        
+        var obj1 = {
+            foo: foo
+        }
+        function foo(a){
+            this.a = a;
+        }
+
+        var bar = new obj1.foo(4);
+
+        console.log(obj1.a)
+        console.log(bar.a)
     </script>
 </body>
 </html>
