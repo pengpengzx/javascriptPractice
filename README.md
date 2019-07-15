@@ -6,7 +6,7 @@
 1. 默认绑定： 函数直接调用 foo()
 2. 隐式绑定： obj.foo() 看调用的地方  可能会隐式丢失 
 
-    ```
+    ```javascript
     function foo(){
         console.log(this.a)
     }
