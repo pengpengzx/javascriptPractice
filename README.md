@@ -1,5 +1,5 @@
-# javascriptPractice
- javascriptPractice
+# 你不知道的javascript（上）  
+读书笔记
 
 ## this 绑定的优先级 
 
