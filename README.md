@@ -130,6 +130,10 @@ javaScript有很多对象子类，我们称之为复杂基本类型（内置对�
 null和undefined没有对应的构造形式，Date只有构造，没有文字
 
 #### 复制对象
-对于JSON安全的
+- 深拷贝
+  对于JSON安全的🔐的对象来说
+        var newObj = JSON.parse(JSON.stringify( someObj ))
+- 浅拷贝
+        Object.assign({}, myObject)
 
 
