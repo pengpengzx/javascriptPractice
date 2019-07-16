@@ -59,6 +59,8 @@ if(!Function.prototype.softBind) {
     }
 }
 ```
+
+    
 ### this词法
 ~~胖箭头~~箭头函数不使用this的四种标准规则，而是根据外层（函数或者全局）作用域来决定`this`
 
@@ -81,7 +83,6 @@ var bar = foo.call(obj1)
 ```
 
 ***
-
 ## 对象
 为什么typeof null 返回字符串'object'    
 >原理：不同得对象在底层都表示为二进制，在Javascript中二进制得前三位都为0得话会被判断为object类型，null得二进制表示是全是0，自然前三位也是0，这其实算一个bug
