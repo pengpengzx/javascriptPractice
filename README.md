@@ -27,4 +27,12 @@
 
         var bar = new foo()
         var bar = new foo()
-2.  23434
+2.  call apply 显示调用，this 绑定指定的对象
+3.  函数在上下文章中调用，this指向上下文对象
+4.  如果都不是的话，使用默认绑定，严格模式下绑定到 undefined，否则绑定到全局对象。
+
+###更安全的this
+> apply绑定null可以展开数组
+> bind(...)可以对参数柯里化
+===
+使用Ф建立一个安全的对象
