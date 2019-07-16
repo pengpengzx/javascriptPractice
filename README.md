@@ -132,8 +132,27 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 #### 复制对象
 - 深拷贝
   对于JSON安全的🔐的对象来说
+
         var newObj = JSON.parse(JSON.stringify( someObj ))
-- 浅拷贝
+- 浅拷贝   
+
         Object.assign({}, myObject)
+
+#### 属性描述符
+
+    Object.getOwnPropertyDescriptor(myObject, 'a');
+    Object.defineProperty( myObject , 'a', {
+        value: 2,
+        writable: true,
+        configurable: true,
+        enumerable: true
+    })
+
+#### 不变性
+1. 对象常量
+    结合`writable:false`和`configurable:false`就可以创建一个真正的常量
+2. 禁止扩展
+    
+
 
 
