@@ -173,6 +173,7 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 `myObject.hasOwnProperty('a')`
 > 只检查属性是否在myObject对象中，不会检查原型链
 
+#### 枚举
 `for in` 对应着对象的枚举属性   
 
 判断对象的某个属性是否可以枚举    
@@ -181,6 +182,7 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 `Object.keys()`返回一个数组，包含所有可枚举的属性
 `Object.getOwnPropertyNames()`返回一个数组，包含所有属性，不论他们是否可枚举。  
 
+#### 遍历
 `every`()和`some()`中特殊的返回值和普通的`break`语句类似，他们会提前终止遍历。
 
 >遍历对象的顺序是不确定的，跟javscript引擎有关
@@ -190,7 +192,6 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 掉用`next`方法来遍历数据
 
 ***
-
 ## 混合对象“类”
 
 
