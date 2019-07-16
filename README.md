@@ -35,7 +35,7 @@
 > apply绑定null可以展开数组  
 > `bind(...)`可以对参数柯里化  
 
-***
+
 使用Ф建立一个安全的对象
 
 
@@ -83,7 +83,7 @@ var obj2 = {
 var bar = foo.call(obj1)
 ```
 
-***
+
 ## 对象
 为什么typeof null 返回字符串'object'    
 >原理：不同得对象在底层都表示为二进制，在Javascript中二进制得前三位都为0得话会被判断为object类型，null得二进制表示是全是0，自然前三位也是0，这其实算一个bug
@@ -199,12 +199,14 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 普通对象没有内置`@@iterator`    
 掉用`next`方法来遍历数据
 
-***
+
 ## 混合对象“类”
 
->面向对象的设计模式：__实例化instantiation、继承inheritance、和多态polymorphism 
+>面向对象的设计模式：__实例化instantiation、继承inheritance、和多态polymorphism__
 
 ### 类理论
 
+>面向对象编程强调的是数据和操作数据的行为本质是互相关联的，因此好的设计就是把数据以及它相关的行为打包或者封装起来。这在正式的计算机科学中有时被成为数据结构。
 
+__类、继承、实例化__
 
