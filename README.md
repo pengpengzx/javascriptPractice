@@ -91,12 +91,40 @@ var bar = foo.call(obj1)
 
 对象可通过两种形式定义  
 
-- 声明（文字）
+1. 声明（文字）
 
         var myObj = {
             key: value
         }
-- 构造形式
+2. 构造形式
 
         var myObj = new Object();
         myObj.key = value;
+#### 类型
+JavaScript has six main type 
+- string
+- number
+- boolean
+- null
+- undefined
+- object
+> 基本简单类型(string,boolean,numbe,null)is not Object
+javaScript有很多对象子类，我们称之为复杂基本类型（内置对象）
+#### 内置对象
+- String
+- Number
+- Boolean
+- Object
+- Function
+- Array
+- Date
+- RegExp
+- Errpr
+> 他们都可以当作构造函数 （由new产生的函数调用）
+检查内置对象 sub-type
+    Object.prototype.toString.call(subTypeObject)
+
+null和undefined没有对应的构造形式，Date只有构造，没有文字
+#### 内置对象
+
+
