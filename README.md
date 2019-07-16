@@ -194,5 +194,9 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 ***
 ## 混合对象“类”
 
+>面向对象的设计模式：__实例化instantiation、继承inheritance、和多态polymorphism 
+
+#### 类理论
+
 
 
