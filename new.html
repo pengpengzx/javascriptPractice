@@ -19,17 +19,24 @@
         // 3. 这个新对象会绑定到函数调用的this。
         // 4. 如果函数没有返回其他对象，那么new 表达式中的函数调用会自动返回这个新对象/
         
-        var obj1 = {
-            foo: foo
-        }
-        function foo(a){
-            this.a = a;
-        }
+        // var obj1 = {
+        //     foo: foo
+        // }
+        // function foo(a){
+        //     this.a = a;
+        // }
 
-        var bar = new obj1.foo(4);
+        // var bar = new obj1.foo(4);
 
-        console.log(obj1.a)
-        console.log(bar.a)
+        // console.log(obj1.a)
+        // console.log(bar.a)
+        // const a = {};
+        // const b = { key : 'b'}
+        // const c = { key : 'c'}
+
+        // a[b] = 123
+        // a[c] = 456
+        // console.log(a)
     </script>
 </body>
 </html>
