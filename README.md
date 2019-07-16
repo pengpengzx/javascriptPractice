@@ -89,3 +89,14 @@ var bar = foo.call(obj1)
 
 >函数是一等公民✔
 
+对象可通过两种形式定义  
+
+- 声明（文字）
+
+        var myObj = {
+            key: value
+        }
+- 构造形式
+
+        var myObj = new Object();
+        myObj.key = value;
