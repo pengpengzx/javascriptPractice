@@ -149,10 +149,11 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
     })
 
 #### 不变性
-1. 对象常量
+1.  对象常量
     结合`writable:false`和`configurable:false`就可以创建一个真正的常量
-2. 禁止扩展
-    
+2.  🈲️止扩展
+
+
 
 
 
