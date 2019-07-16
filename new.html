@@ -37,6 +37,21 @@
         // a[b] = 123
         // a[c] = 456
         // console.log(a)
+        var jquery = (function foo(){
+            var a = 1;
+            var b = 1;
+            function bar (){
+                console.log(a)
+            }
+            function baz (){
+                console.log(b)
+            }
+            var publicApi = {
+                bar: bar,
+                baz: baz
+            }
+            return publicApi
+        })()
     </script>
 </body>
 </html>
