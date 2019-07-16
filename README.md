@@ -86,11 +86,10 @@ var bar = foo.call(obj1)
 为什么typeof null 返回字符串'object'    
 >原理：不同得对象在底层都表示为二进制，在Javascript中二进制得前三位都为0得话会被判断为object类型，null得二进制表示是全是0，自然前三位也是0，这其实算一个bug
 
->javascript万物皆对象其实是错误的 ❌
+-   javascript万物皆对象其实是错误的 ❌
+-   函数是一等公民✔
 
->函数是一等公民✔
-
-对象可通过两种形式定义  
+对象可通过两种形式定义：  
 
 1. 声明（文字）
 
@@ -102,7 +101,8 @@ var bar = foo.call(obj1)
         var myObj = new Object();
         myObj.key = value;
 
-#### 类型
+
+### 类型
 JavaScript has six main type 
 - string
 - number
@@ -113,7 +113,9 @@ JavaScript has six main type
   
 > 基本简单类型(string,boolean,numbe,null)is not Object
 javaScript有很多对象子类，我们称之为复杂基本类型（内置对象）
-#### 内置对象
+
+
+### 内置对象
 - String
 - Number
 - Boolean
@@ -129,7 +131,8 @@ javaScript有很多对象子类，我们称之为复杂基本类型（内置对�
 
 null和undefined没有对应的构造形式，Date只有构造，没有文字
 
-#### 复制对象
+
+### 复制对象
 - 深拷贝
   对于JSON安全的🔐的对象来说
 
@@ -138,8 +141,8 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 
         Object.assign({}, myObject)
 
-#### 属性描述符
 
+### 属性描述符 
     Object.getOwnPropertyDescriptor(myObject, 'a');
     Object.defineProperty( myObject , 'a', {
         value: 2,
@@ -148,7 +151,8 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
         enumerable: true
     })
 
-#### 不变性
+
+### 不变性
 1.  对象常量    
 
     结合`writable:false`和`configurable:false`就可以创建一个真正的常量
@@ -166,12 +170,14 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
     `Object.freeze(myObject)`这个方法是你可以应用在对象上的级别最高的不可变性   
     可以循环遍历冻结
 
+
 #### 存在性
 `('a' in myObject);` 
 > `in`操作符会检查对象以及[[Prtotype]]原型链
 
 `myObject.hasOwnProperty('a')`
 > 只检查属性是否在myObject对象中，不会检查原型链
+
 
 #### 枚举
 `for in` 对应着对象的枚举属性   
