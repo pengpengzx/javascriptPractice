@@ -34,7 +34,7 @@
 ### 更安全的`this`
 > apply绑定null可以展开数组  
 > `bind(...)`可以对参数柯里化  
-    
+
 ***
 使用Ф建立一个安全的对象
 
@@ -173,7 +173,7 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
     可以循环遍历冻结
 
 
-#### 存在性
+### 存在性
 `('a' in myObject);` 
 > `in`操作符会检查对象以及[[Prtotype]]原型链
 
@@ -181,7 +181,7 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 > 只检查属性是否在myObject对象中，不会检查原型链
 
 
-#### 枚举
+### 枚举
 `for in` 对应着对象的枚举属性   
 
 判断对象的某个属性是否可以枚举    
@@ -190,7 +190,7 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 `Object.keys()`返回一个数组，包含所有可枚举的属性
 `Object.getOwnPropertyNames()`返回一个数组，包含所有属性，不论他们是否可枚举。  
 
-#### 遍历
+### 遍历
 `every`()和`some()`中特殊的返回值和普通的`break`语句类似，他们会提前终止遍历。
 
 >遍历对象的顺序是不确定的，跟javscript引擎有关
@@ -204,7 +204,7 @@ null和undefined没有对应的构造形式，Date只有构造，没有文字
 
 >面向对象的设计模式：__实例化instantiation、继承inheritance、和多态polymorphism 
 
-#### 类理论
+### 类理论
 
 
 
