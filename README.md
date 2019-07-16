@@ -81,6 +81,7 @@ var bar = foo.call(obj1)
 ```
 
 ***
+
 ## 对象
 为什么typeof null 返回字符串'object'    
 >原理：不同得对象在底层都表示为二进制，在Javascript中二进制得前三位都为0得话会被判断为object类型，null得二进制表示是全是0，自然前三位也是0，这其实算一个bug
@@ -100,6 +101,7 @@ var bar = foo.call(obj1)
 
         var myObj = new Object();
         myObj.key = value;
+
 #### 类型
 JavaScript has six main type 
 - string
@@ -108,6 +110,7 @@ JavaScript has six main type
 - null
 - undefined
 - object
+  
 > 基本简单类型(string,boolean,numbe,null)is not Object
 javaScript有很多对象子类，我们称之为复杂基本类型（内置对象）
 #### 内置对象
@@ -125,6 +128,8 @@ javaScript有很多对象子类，我们称之为复杂基本类型（内置对�
     Object.prototype.toString.call(subTypeObject)
 
 null和undefined没有对应的构造形式，Date只有构造，没有文字
-#### 内置对象
+
+#### 复制对象
+对于JSON安全的
 
 
